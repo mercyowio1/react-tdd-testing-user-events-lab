@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 
 import App from "../App";
 
@@ -20,7 +20,6 @@ test("displays an image of yourself", () => {
   render(<App />);
 
   const image = screen.getByAltText("My profile pic");
-
   expect(image).toHaveAttribute("src", "https://via.placeholder.com/350");
 });
 
